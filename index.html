@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Web Experience - Immersive Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">3DSPHERE</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#showcase" class="nav-link">Showcase</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with 3D Canvas -->
+    <section id="hero" class="hero">
+        <canvas id="canvas3d" class="canvas-3d"></canvas>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-word">Next</span>
+                <span class="title-word">Gen</span>
+                <span class="title-word">3D</span>
+            </h1>
+            <p class="hero-subtitle">Experience the future of web design</p>
+            <button class="cta-button">Explore Now</button>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <div class="wheel"></div>
+        </div>
+    </section>
+
+    <!-- 3D Cards Showcase -->
+    <section id="showcase" class="showcase">
+        <h2 class="section-title">Featured Models</h2>
+        
+        <div class="cards-container">
+            <!-- Card 1 -->
+            <div class="card-3d">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="cube-model"></div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Dynamic Geometry</h3>
+                        <p>Responsive 3D models</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card-3d">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="sphere-model"></div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Smooth Surfaces</h3>
+                        <p>Organic 3D forms</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card-3d">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="pyramid-model"></div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Geometric Layers</h3>
+                        <p>Complex structures</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card-3d">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="torus-model"></div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Fluid Motion</h3>
+                        <p>Flowing animations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animated Floating Elements -->
+    <section id="features" class="features">
+        <h2 class="section-title">Key Features</h2>
+        
+        <div class="features-grid">
+            <div class="feature-box">
+                <div class="feature-icon rotating-cube"></div>
+                <h3>Interactive 3D</h3>
+                <p>Fully interactive three-dimensional elements</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon rotating-sphere"></div>
+                <h3>Smooth Animation</h3>
+                <p>60FPS performance with fluid transitions</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon rotating-pyramid"></div>
+                <h3>Modern Design</h3>
+                <p>Contemporary aesthetics with depth</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon rotating-torus"></div>
+                <h3>Responsive</h3>
+                <p>Works on all devices seamlessly</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Section -->
+    <section class="parallax-section">
+        <div class="parallax-bg"></div>
+        <div class="parallax-content">
+            <h2>Immersive Experience</h2>
+            <p>Scroll to reveal depth layers</p>
+        </div>
+    </section>
+
+    <!-- Animated Grid -->
+    <section class="grid-section">
+        <h2 class="section-title">Visualization Grid</h2>
+        <div class="grid-container">
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 3D Web Experience. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">GitHub</a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
